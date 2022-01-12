@@ -5,19 +5,19 @@
 #  id                     :bigint           not null, primary key
 #  admin                  :boolean          default(FALSE)
 #  confirmation_sent_at   :datetime
-#  confirmation_token     :string(255)
+#  confirmation_token     :string
 #  confirmed_at           :datetime
-#  email                  :string(255)      default(""), not null
+#  email                  :string           default(""), not null
 #  employer               :boolean          default(FALSE)
-#  encrypted_password     :string(255)      default(""), not null
-#  first_name             :string(255)
+#  encrypted_password     :string           default(""), not null
+#  first_name             :string
 #  job_seeker             :boolean          default(FALSE)
-#  last_name              :string(255)
+#  last_name              :string
 #  moderator              :boolean
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
-#  reset_password_token   :string(255)
-#  unconfirmed_email      :string(255)
+#  reset_password_token   :string
+#  unconfirmed_email      :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
 #

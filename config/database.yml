@@ -12,10 +12,11 @@
 default: &default # adapter: mysql2
   adapter: postgresql
   encoding: unicode
+  username: postgres
+  password: postgres
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  host: 127.0.0.1
+  port: 5432
 
 development:
   <<: *default

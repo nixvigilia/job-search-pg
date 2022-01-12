@@ -3,24 +3,24 @@
 # Table name: jobs
 #
 #  id                  :bigint           not null, primary key
-#  company_email       :string(255)
-#  company_name        :string(255)
-#  company_website     :string(255)
-#  compensation_range  :string(255)
-#  compensation_type   :string(255)
-#  estimated_hours     :string(255)
+#  company_email       :string
+#  company_name        :string
+#  company_website     :string
+#  compensation_range  :string
+#  compensation_type   :string
+#  estimated_hours     :string
 #  featured            :boolean          default(FALSE)
 #  featured_until      :datetime
-#  headquarters        :string(255)
-#  link_to_apply       :string(255)
+#  headquarters        :string
+#  link_to_apply       :string
 #  price               :integer
 #  published_at        :datetime
 #  remote              :boolean          default(FALSE)
-#  slug                :string(255)
-#  status              :string(255)      default("pending")
-#  title               :string(255)
-#  upsell_type         :string(255)
-#  years_of_experience :string(255)
+#  slug                :string
+#  status              :string           default("pending")
+#  title               :string
+#  upsell_type         :string
+#  years_of_experience :string
 #  created_at          :datetime         not null
 #  updated_at          :datetime         not null
 #  user_id             :bigint           not null
