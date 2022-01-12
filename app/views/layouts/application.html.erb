@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="antialiased h-full bg-gray-50">
+  <%= render "shared/head" %>
+
+  <body class="font-sans font-normal leading-normal text-gray-800">
+    <%= render "shared/flash_notice" %>
+    <% unless action_name == "dashboard" %>
+      <%= render "shared/header" unless current_page?(new_job_url) %>
+    <% end %>
+
+    <%= yield :hero %>
+    
+    <main>
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    </main>
+  </body>
+</html>

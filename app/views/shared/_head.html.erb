@@ -1,0 +1,22 @@
+ <head>
+  <title>
+    <% if content_for?(:title) %>
+      <%= yield :title %> |
+    <% end %>
+    Joblite | Job Search
+  </title>
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="stripe-public-key" content="<%= Rails.application.credentials.dig(:stripe, :public_key) %>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet"> 
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_pack_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'https://js.stripe.com/v3/', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag  'application', 'data-turbolinks-track': 'reload' %>
+</head>
