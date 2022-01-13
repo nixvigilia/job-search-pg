@@ -45,7 +45,7 @@ class JobsController < ApplicationController
   # PATCH/PUT /jobs/1 or /jobs/1.json
   def update
     respond_to do |format|
-      if @job.update(job_params)
+      if @job.update(job_params_edit)
         format.html { redirect_to @job, notice: 'Job was successfully updated.' }
         format.json { render :show, status: :ok, location: @job }
       else
@@ -101,6 +101,7 @@ class JobsController < ApplicationController
   def job_params
     params.require(:job).permit(
       :company_email,
+      # :company_logo,
       :company_name, 
       :company_website, 
       :company_description, 
@@ -117,4 +118,27 @@ class JobsController < ApplicationController
       :upsell_type, 
       :years_of_experience)
   end
+
+  def job_params_edit
+    params.require(:job).permit(
+      :company_email,
+      :company_logo,
+      :company_name, 
+      :company_website, 
+      :company_description, 
+      :compensation_range,
+      :compensation_type,  
+      :description, 
+      :estimated_hours, 
+      # :featured_until, 
+      :headquarters, 
+      :link_to_apply, 
+      :price, 
+      :remote, 
+      :title, 
+      :upsell_type, 
+      :years_of_experience)
+  end
+
+
 end
