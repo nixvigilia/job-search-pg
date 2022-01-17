@@ -1,27 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-- Ruby version
-
-- System dependencies
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
+When an app on Heroku has only one web dyno, that dyno doesn't receive any traffic in 1 hour, the dyno goes to sleep, and the website will take a moment to load.
 
 # job-search
 
