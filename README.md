@@ -1,7 +1,5 @@
 # README
 
-When an app on Heroku has only one web dyno, that dyno doesn't receive any traffic in 1 hour, the dyno goes to sleep, and the website will take a moment to load.
-
 # job-search
 
 - install gems and follow instructions
