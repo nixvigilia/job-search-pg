@@ -1,1 +1,1 @@
-Job search web application built using Ruby on Rails & Vue JS 
+# Job search web application built using Ruby on Rails & Vue JS 
